@@ -1,0 +1,55 @@
+{
+  "name": "cssom-gen",
+  "description": "Programmatically generate CSS using CSSOM ",
+  "version": "0.5.3",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "cssom",
+    "css",
+    "design-tokens",
+    "design-systems",
+    "postcss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davejsdev/cssom-gen.git"
+  },
+  "main": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "default": "./dist/index.mjs"
+    },
+    "./*": "./dist/*.mjs",
+    "./package.json": "./package.json"
+  },
+  "author": {
+    "name": "David Leger",
+    "email": "davidleger95@gmail.com"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "benchmark": "vitest bench",
+    "build": "unbuild",
+    "format": "biome format . --write",
+    "lint": "biome check .",
+    "test": "vitest run",
+    "version": "pnpm run build && changeset version"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.2",
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.5",
+    "typescript": "^5.8.3",
+    "unbuild": "^3.6.0",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,10 @@
+**/*.config.*
+.changeset
+.github
+.nvmrc
+.vscode
+biome.json
+tsconfig.*
+scripts
+src
+test

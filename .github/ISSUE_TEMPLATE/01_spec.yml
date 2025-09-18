@@ -1,0 +1,32 @@
+name: Specification Issue
+description: This library doesn’t match the W3C specification.
+title: 📝 Spec Issue
+labels:
+  - bug
+  - spec
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You’re opening an issue because this library diverges from the [CSSOM API Specification](https://www.w3.org/TR/cssom-1/).
+        
+        Since this library expands on the specification, these issues should specifically be identifying _conflicts_ with the specification. Additional functionality is the intent of this library, so they are not specification issues.
+  - type: textarea
+    id: output
+    attributes:
+      label: API Differences
+      description: What did this library produce? What were you expecting?
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any other additional information or comments?
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Contributing
+      options:
+        - label: I am willing to open a Pull Request
