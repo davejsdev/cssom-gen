@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { CSSComment } from '../CSSComment';
-import { CSSStyleSheet } from '../CSSStyleSheet';
+import { CSSComment } from '../CSSComment.js';
+import { CSSStyleSheet } from '../CSSStyleSheet.js';
 
 describe('CSSStyleSheet', () => {
   it('should create a stylesheet', () => {

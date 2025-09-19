@@ -1,2 +1,2 @@
-export * from './entities/CSSComment';
-export * from './entities/CSSStyleSheet';
+export * from './entities/CSSComment.js';
+export * from './entities/CSSStyleSheet.js';

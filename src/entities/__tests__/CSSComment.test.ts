@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { CSSComment } from '../CSSComment';
+import { CSSComment } from '../CSSComment.js';
 
 describe('CSSComment', () => {
   it('should create a comment', () => {
