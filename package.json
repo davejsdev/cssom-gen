@@ -1,7 +1,7 @@
 {
   "name": "cssom-gen",
   "description": "Programmatically generate CSS using CSSOM ",
-  "version": "0.5.3",
+  "version": "0.0.0",
   "type": "module",
   "license": "MIT",
   "keywords": [
