@@ -51,5 +51,8 @@
     "typescript": "^5.8.3",
     "unbuild": "^3.6.0",
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "window": "^4.2.7"
   }
 }
